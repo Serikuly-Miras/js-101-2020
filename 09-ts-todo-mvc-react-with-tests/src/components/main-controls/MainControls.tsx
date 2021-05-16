@@ -27,7 +27,11 @@ export const MainControls = (props: {
           Select all tasks
         </button>
       </div>
-      <form className="main-controls__create-new" onSubmit={onSubmit}>
+      <form
+        className="main-controls__create-new"
+        onSubmit={onSubmit}
+        data-test-id="create-new-todo-form"
+      >
         <input
           ref={_inputRef}
           type="text"
